@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Receptionist Form</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 1em;
+width: 20em;
+padding: 1em;
+border: 1px solid #ccc;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm fieldset {
+border: none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+padding: 0;
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="number"],
+.myForm input[type="submit"],
+.myForm select,
+.myForm textarea {
+display: block;
+width: 100%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-top: 1em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+<center>
+<form class="myForm" method="post" action="insertReceptionistphp.php">
+
+<p>
+<h1>Insert Receptionist
+</h1> 
+</p>
+
+<p>
+<label>Employee Id
+<input type="text" name="EmployeeId" required>
+</label> 
+</p>
+
+<p>
+<label>First Name
+<input type="text" name="fName" required>
+</label> 
+</p>
+
+<p>
+<label>Last Name
+<input type="text" name="lName" required>
+</label> 
+</p>
+
+<fieldset>
+<legend>Gender</legend>
+<p><label class="choice"> <input type="radio" name="Gender" required value="Male"> Male </label></p>
+<p><label class="choice"> <input type="radio" name="Gender" required value="Female"> Female </label></p>
+<p><label class="choice"> <input type="radio" name="Gender" required value="Other"> Other </label></p>
+</fieldset>
+
+<p>
+<label>Age
+<input type="number" name="Age">
+</label>
+</p>
+
+<p>
+<label>Contact Number
+<input type="tel" name="ContactNo">
+</label>
+</p>
+
+<p>
+<label>
+<input type="submit" name="type" value="Insert">
+</label>
+</p>
+
+</form>
+<p><a style="text-decoration: none; color: rgb(0, 83, 156);" href="index.html"><h2>Go to Home</h2></a></p>
+</center>
+</body>
+</html>
